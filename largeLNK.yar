@@ -11,5 +11,5 @@ rule largeLNK {
 	condition:
 		uint16(0) == 0x004c
 		and filename == "*\.lnk"
-		and filesize &gt; 500B
+		and filesize < 500B
 }
